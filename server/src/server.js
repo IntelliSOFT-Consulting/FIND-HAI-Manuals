@@ -20,9 +20,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('uploads'));
 
-app.use('/api/v1', routes);
+app.use('/server', routes);
 
-app.use('/api/uploads', express.static('uploads'))
+app.use('/server/uploads', express.static('uploads'))
 
 
 
