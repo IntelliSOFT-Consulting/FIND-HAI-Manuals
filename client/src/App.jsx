@@ -54,7 +54,7 @@ function App() {
       render: (text, record) => (
         <div className="flex">
           <a
-            href={`/api/v1/files/${record.name}`}
+            href={`/server/files/${record.name}`}
             target="_blank"
             rel="noreferrer"
             download={record.name}

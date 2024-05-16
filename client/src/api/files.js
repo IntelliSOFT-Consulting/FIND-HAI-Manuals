@@ -10,7 +10,7 @@ export const useFiles = () => {
   const getFiles = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("/api/v1/files");
+      const response = await axios.get("/server/files");
       setFiles(response.data.files);
       setAllFiles(response.data.files);
       setLoading(false);
